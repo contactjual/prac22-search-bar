@@ -1,0 +1,25 @@
+body {
+    /* background-color: black; */
+}
+
+.search {
+    width: 30%;
+    margin: 20px auto;
+}
+.search input[type="text"], button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    float: left;
+}
+button {
+    background-color: bisque;
+    cursor: pointer;
+    display: none;
+    transition: .5s;
+    margin-left: 5px;
+}
+input:not(:placeholder-shown) + button {
+    display: block;
+}
